@@ -1,4 +1,6 @@
-let mailer = require('nodemailer')
+let mailer = require('nodemailer');
+require('dotenv').config();
+
 
 //SMTPの設定
 const smtpConfig = {
@@ -6,8 +8,8 @@ const smtpConfig = {
     port: 465,
     secure: true, // SSL
     auth: {
-        user: 'rozetta.araki@gmail.com',
-        
+        user: process.env.EMAIL_ADDRESS,
+        pass: process.env.EMAIL_PASSWORD
     }
 }
 
