@@ -7,7 +7,7 @@ const smtpConfig = {
     secure: true, // SSL
     auth: {
         user: 'rozetta.araki@gmail.com',
-        pass: 'toritodon14'
+        
     }
 }
 
